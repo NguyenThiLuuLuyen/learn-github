@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-  <meta charset="utf-8">
-  <title>Thế Giới Mỹ Phẩm Tiêu Biểu</title>
-  <style>
-    /* Quy định ảnh */
-    img {
-      width: 150px;
-      height: 150px;
-      border-radius: 100%;
-      object-fit: cover;
-    }
-
-    /* Quy định từng dòng trong ds số - ĐÃ BỎ KHUNG */
-    ol li {
-      padding: 10px;
-      margin-bottom: 10px;
-      list-style-position: inside;
-    }
-
-    /* Hiệu ứng di chuyển chuột */
-    ol li:hover {
-      background: #fff0f5; 
-      font-weight: bolder;
-      text-decoration: underline;
-    }
-
-    /* Quy định cho đường link */
-    ol li a {
-      color: #d1105a;
-      text-decoration: none;
-      display: inline-block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Loài Chó</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
-  <h1>Top 3 Mỹ Phẩm Tiêu Biểu Được Yêu Thích</h1>
-  <button onclick="alert('Chào mừng bạn đến với thế giới làm đẹp!')">Khám phá ngay!</button>
-  <br><br>
-  
-  <img src="nuoctaytrang.jpg" alt="Mỹ phẩm tiêu biểu">
 
-  <ol type="1" start="1">
-    <li>
-      <a href="https://www.bioderma.com.vn/cac-san-pham/sensibio/h2o" target="_blank">
-        Nước tẩy trang Bioderma Sensibio H2O (Cho da nhạy cảm)
-      </a>
-    </li>
-    <li>
-      <a href="https://www.esteelauder.com.vn/product/681/26959/product-catalog/advanced-night-repair" target="_blank">
-        Tinh chất Estée Lauder Advanced Night Repair (Phục hồi da)
-      </a>
-    </li>
-    <li>
-      <a href="https://www.larocheposay.vn/anthelios/anthelios-uvmune-400-fluid-invisible-spf50" target="_blank">
-        Kem chống nắng La Roche-Posay Anthelios UVMune 400
-      </a>
-    </li>
-  </ol>
+    <div class="container">
+        <header class="header-a">
+            <h1>CẨM NANG CÁC LOÀI CHÓ CẢNH</h1>
+        </header>
+
+        <input type="radio" name="nav" id="tab-poodle" checked>
+        <input type="radio" name="nav" id="tab-husky">
+        <input type="radio" name="nav" id="tab-corgi">
+        <input type="radio" name="nav" id="tab-golden">
+
+        <div class="middle-body">
+            <nav class="menu-b">
+                <h3>DANH MỤC</h3>
+                <ul>
+                    <li><label for="tab-poodle" class="menu-item">Chó Poodle</label></li>
+                    <li><label for="tab-husky" class="menu-item">Chó Husky</label></li>
+                    <li><label for="tab-corgi" class="menu-item">Chó Corgi</label></li>
+                    <li><label for="tab-golden" class="menu-item">Chó Golden</label></li>
+                </ul>
+            </nav>
+
+            <main class="content-c">
+                <div class="page-content content-poodle">
+                    <h2>Chó Poodle</h2>
+                    <p>Thông minh, quý phái và không rụng lông.</p>
+                    <img src="images/chopoodle.jpg" alt="Poodle">
+                    <br>
+                        <p>Chó Poodle – "Quý tộc thông minh"</p>
+                     <br>
+                        <p>-Nguồn gốc: Có nguồn gốc từ Đức và Pháp, vốn là giống chó săn vịt trên mặt nước.</p>
+                     <br>
+                        <p>-Đặc điểm ngoại hình: Điểm nổi bật nhất là bộ lông xoăn tít, dày dặn và đặc biệt là rất ít rụng lông, phù hợp                               cho người bị dị ứng. Chúng có 3 kích thước phổ biến: Toy (nhỏ), Miniature (vừa) và Standard (lớn).</p>
+                            
+                     <br>
+                        <p>-Tính cách: Đứng thứ 2 trong danh sách các loài chó thông minh nhất thế giới. Poodle rất dễ huấn luyện, nhanh nhẹn và cực kỳ quấn chủ.<p/>
+                        
+                     <br>
+                         <p>-Lưu ý khi nuôi: Cần được chải lông hằng ngày và cắt tỉa định kỳ để tránh rối lông.</p>
+                     <br>
+
+                         <video width="400" height="600" controls >
+                                <source src="video/videopoodle.mp4" type="video/mp4">
+                                 Trình duyệt của bạn không hỗ trợ xem video.
+                         </video>
+                </div>
+                <div class="page-content content-husky">
+                    <h2>Chó Husky</h2>
+                    <p>Tinh nghịch, đôi mắt xanh và cực kỳ năng động.</p>
+                    <img src="images/chohusky.jpg" alt="Husky">
+                    <br>
+                         <p>Chó Husky – "Người bạn ngáo ngơ"</p>
+                    <br> 
+                         <p>Nguồn gốc: Đến từ vùng Siberia (Nga), tổ tiên dùng để kéo xe tuyết.</p>
+                    <br>
+                         <p>Đặc điểm ngoại hình: Có vẻ ngoài giống như một chú sói với đôi mắt thường có màu xanh dương hoặc hai màu khác nhau. Bộ lông hai lớp rất dày giúp chịu lạnh tốt.</p>
+                    <br>
+                         <p>Tính cách: Husky nổi tiếng với sự tinh nghịch, hay "cãi lời" chủ bằng những tiếng hú dài. Chúng rất thân thiện với người lạ nhưng lại cực kỳ tăng động.</p>
+                    <br>
+                         <p>Lưu ý khi nuôi: Cần không gian rộng và được đi chạy bộ hằng ngày để giải tỏa năng lượng, nếu không chúng rất dễ "phá nhà".</p>
+                    <br>
+
+                        <video width="400" height="600" controls >
+                                <source src="video/videohusky.mp4" type="video/mp4">
+                                 Trình duyệt của bạn không hỗ trợ xem video.
+                        </video>
+                </div>
+                <div class="page-content content-corgi">
+                    <h2>Chó Corgi</h2>
+                    <p>Chân ngắn, mông tròn và vô cùng đáng yêu.</p>
+                    <img src="images/chocorgi.jpg" alt="Corgi">
+                    <br>
+                        <p>Chó Corgi – "Chú lùn đáng yêu"</p>
+                    <br>
+                        <p>Nguồn gốc: Xứ Wales (Vương quốc Anh), ban đầu được nuôi để chăn gia súc.</p>
+
+                    <br>
+                        <p>Đặc điểm ngoại hình: Thân hình dài nhưng bốn chân cực ngắn, đôi tai to dựng đứng và khuôn mặt luôn trông như đang mỉm cười. Đặc biệt, "vòng ba" tròn trịa của Corgi là điểm khiến nhiều người mê mẩn.</p>
+
+                    <br>
+                        <p>Tính cách: Thông minh, cảnh giác và có phần hơi bướng bỉnh. Corgi rất trung thành và thích tham gia vào các hoạt động của gia đình</p>
+.
+                    <br>
+                        <p>Lưu ý khi nuôi: Dễ bị béo phì và gặp các vấn đề về xương sống do lưng dài chân ngắn, nên cần kiểm soát chế độ ăn kỹ lưỡng.</p>
+                    <br>
+                        <video width="400" height="600" controls >
+                                <source src="video/videocorgi.mp4" type="video/mp4">
+                                 Trình duyệt của bạn không hỗ trợ xem video.
+                        </video>
+                </div>
+                <div class="page-content content-golden">
+                    <h2>Chó Golden</h2>
+                    <p>Người bạn trung thành, hiền lành của mọi gia đình.</p>
+                    <img src="images/chogolden.jpg" alt="Golden">
+                    <br>
+                        <p>Chó Golden Retriever – "Thiên sứ ấm áp"</p>
+                    <br>
+                        <p>Nguồn gốc: Scotland, là giống chó săn chuyên thu hồi con mồi.</p>
+                    <br>
+                        <p>Đặc điểm ngoại hình: Có bộ lông màu vàng (từ kem đến vàng đậm) mượt mà và không thấm nước. Khuôn mặt hiền lành, đôi tai cụp và chiếc đuôi luôn vẫy mừng.</p>
+                    <br>
+                        <p>Tính cách: Được mệnh danh là "loài chó quốc dân" vì cực kỳ hiền lành, kiên nhẫn và yêu trẻ em. Golden rất thích lấy lòng chủ nhân và làm việc theo mệnh lệnh.</p>
+                    <br>
+                        <p>Lưu ý khi nuôi: Rụng lông khá nhiều, đặc biệt là vào mùa thay lông. Chúng rất thích nước nên bạn có thể cho chúng đi bơi thường xuyên.</p>
+                    <br>
+                        <video width="400" height="600" controls >
+                                <source src="video/videogolden.mp4" type="video/mp4">
+                                 Trình duyệt của bạn không hỗ trợ xem video.
+                        </video>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer-d">
+            <div class="info-container">
+                <p><strong>Họ tên:</strong> Nguyễn Thị Lưu Luyến</p>
+                <p><strong>MSSV:</strong> 110124114</p>
+                <p><strong>Email:</strong> nguyenthiluuluyen7@gmail.com </p>
+            </div>
+        </footer>
+    </div>
+
 </body>
-
 </html>

@@ -1,0 +1,135 @@
+/* Tổng quát */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 15px;
+}
+
+/* Ẩn các radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Ô A */
+.header-a {
+    background: #e67e22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Thân trang */
+.middle-body {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    min-height: 0;
+}
+
+/* Ô B: Menu */
+.menu-b {
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background: #ddd;
+}
+
+/* Ô C: Nội dung */
+.content-c {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.page-content {
+    display: none; /* Ẩn tất cả nội dung mặc định */
+    text-align: center;
+}
+
+.page-content img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Ô D */
+.footer-d {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* logic ĐỔI MÀU MENU VÀ HIỂN THỊ NỘI DUNG (CHỈ DÙNG CSS) */
+
+/* Khi Radio Poodle được chọn */
+#tab-poodle:checked ~ .middle-body .menu-b label[for="tab-poodle"] {
+    background: #e67e22; color: white; font-weight: bold;
+}
+#tab-poodle:checked ~ .middle-body .content-c .content-poodle {
+    display: block;
+}
+
+/* Khi Radio Husky được chọn */
+#tab-husky:checked ~ .middle-body .menu-b label[for="tab-husky"] {
+    background: #e67e22; color: white; font-weight: bold;
+}
+#tab-husky:checked ~ .middle-body .content-c .content-husky {
+    display: block;
+}
+
+/* Khi Radio Corgi được chọn */
+#tab-corgi:checked ~ .middle-body .menu-b label[for="tab-corgi"] {
+    background: #e67e22; 
+    color: white;
+    font-weight: bold;
+}
+#tab-corgi:checked ~ .middle-body .content-c .content-corgi {
+    display: block;
+}
+
+/* Khi Radio Golden được chọn */
+#tab-golden:checked ~ .middle-body .menu-b label[for="tab-golden"] {
+    background: #e67e22; color: white; font-weight: bold;
+}
+#tab-golden:checked ~ .middle-body .content-c .content-golden {
+    display: block;
+}
